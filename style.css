@@ -1,0 +1,148 @@
+
+@keyframes bubbleFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mainContent {
+  margin-left: 120px; /* Same as sidebar width */
+  padding: 3rem;
+}
+
+.sidebar {
+font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100vh;
+  background-color: #3c3c3cb0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.sidebar h1 {
+      font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+.titleThingy {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-spacing-trim: 2px;
+  color: white;
+}
+
+
+.bubbleSF {
+  background-color: #3c3c3c;
+  color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Animation */
+  animation: bubbleFadeUp 0.8s ease-in-out;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Font */
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+.bubble-img {
+  width: 100px; 
+  height: auto;    
+  margin-left: 1rem;
+  border-radius: 99px;
+}
+
+.bubble-img-no-padding {
+  width: 100px; 
+  height: auto;    
+  margin-left: 1rem;
+  border-radius: 0px;
+}
+
+
+body {
+    background-color: rgb(57, 56, 58);
+    background-image: url('images/smileygrid.png');
+    background-size: stretch;
+}
+
+
+.bubbleVAI {
+  background-color: #3c3c3c;
+  color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Animation */
+  animation: bubbleFadeUp 0.8s ease-in-out;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Font */
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bubbleBTrooms {
+  background-color: #3c3c3c;
+  color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Animation */
+  animation: bubbleFadeUp 0.8s ease-in-out;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Font */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
