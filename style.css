@@ -11,9 +11,22 @@
 }
 
 .mainContent {
-  margin-left: 120px; /* Same as sidebar width */
+  margin-left: 120px;
   padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: auto auto; /* Two rows */
+  gap: 2rem;
 }
+
+
+.gridContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
 
 .sidebar {
 font-family: "DM Sans", sans-serif;
@@ -25,7 +38,7 @@ font-family: "DM Sans", sans-serif;
   left: 0;
   width: 120px;
   height: 100vh;
-  background-color: #3c3c3cb0;
+  background-color: #e4e4e4b0;
   color: white;
   display: flex;
   flex-direction: column;
@@ -47,17 +60,21 @@ font-family: "DM Sans", sans-serif;
   text-align: center;
   margin-bottom: 2rem;
   text-spacing-trim: 2px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 
 .bubbleSF {
-  background-color: #3c3c3c;
-  color: white;
+  background-color: #ffffff9a;
+  color: rgb(0, 0, 0);
   border-radius: 20px;
   padding: 1rem;
   margin: 1rem 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 
+  0 -0.5px 6px rgba(0, 0, 0, 0.15), /* subtle top shadow */
+  0 8px 16px rgba(0, 0, 0, 0.3);   /* main bottom shadow */
+
+
 
   /* Animation */
   animation: bubbleFadeUp 0.8s ease-in-out;
@@ -85,6 +102,28 @@ font-family: "DM Sans", sans-serif;
   border-radius: 99px;
 }
 
+.titleB {
+  width: 100px; 
+  height: auto;    
+}
+
+.subTitle {
+  width: 20px; 
+  height: auto;    
+}
+
+
+.sub {
+  width: 500px;
+  height: auto;
+  margin-bottom: 0rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to the bottom */
+}
+
+
 .bubble-img-no-padding {
   width: 100px; 
   height: auto;    
@@ -92,44 +131,88 @@ font-family: "DM Sans", sans-serif;
   border-radius: 0px;
 }
 
+.image-row {
+  display: flex;
+  justify-content: center;     /* centers the row */
+  gap: 0rem;                   /* spacing between images */
+  margin: 0rem ;
+}
+
+.example-img {
+  width: 600px; 
+  height: auto;    
+  margin-left: 0.2rem;
+  border-radius: 0px;
+
+  width: 30%;  
+  height: auto;
+  border-radius: 8px;  
+  object-fit: cover;
+}
+
 
 body {
-    background-color: rgb(57, 56, 58);
-    background-image: url('images/smileygrid.png');
-    background-size: stretch;
+  margin: 0;
+  height: 100vh;
+  background-image: url('images/cuteBG.png');
+  background-attachment: fixed;       /* key to parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+a {
+  color: #222;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #000;
+  text-decoration: wavy;
 }
 
 
 .bubbleVAI {
-  background-color: #3c3c3c;
-  color: white;
+  background-color: #ffffff9a;
+  color: rgb(0, 0, 0);
   border-radius: 20px;
   padding: 1rem;
   margin: 1rem 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 
+  0 -0.5px 6px rgba(0, 0, 0, 0.15), /* subtle top shadow */
+  0 8px 16px rgba(0, 0, 0, 0.3);   /* main bottom shadow */
+
+
 
   /* Animation */
   animation: bubbleFadeUp 0.8s ease-in-out;
 
   /* Layout */
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
 
   /* Font */
-  font-family: "Inconsolata", monospace;
+  font-family: "Inconsolata", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .bubbleBTrooms {
-  background-color: #3c3c3c;
-  color: white;
+  background-color: #ffffff9a;
+  color: rgb(0, 0, 0);
   border-radius: 20px;
   padding: 1rem;
   margin: 1rem 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 
+  0 -0.5px 6px rgba(0, 0, 0, 0.15), /* subtle top shadow */
+  0 8px 16px rgba(0, 0, 0, 0.3);   /* main bottom shadow */
+
+
 
   /* Animation */
   animation: bubbleFadeUp 0.8s ease-in-out;
@@ -145,4 +228,33 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.bubbleNEW {
+  background-color: #ffffff9a;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 
+  0 -0.5px 6px rgba(0, 0, 0, 0.15), /* subtle top shadow */
+  0 8px 16px rgba(0, 0, 0, 0.3);   /* main bottom shadow */
+
+
+
+  /* Animation */
+  animation: bubbleFadeUp 0.8s ease-in-out;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Font */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
